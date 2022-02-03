@@ -24,23 +24,17 @@ function gameResult() {
 function game() {
 
     //Get input from the player
-    const playerSelectionPrompt = prompt("Rock, Paper, or Scissors?");
-    const playerSelection = playerSelectionPrompt.toLowerCase();
+    let playerSelectionPrompt = prompt("Rock, Paper, or Scissors?");
+    let playerSelection = playerSelectionPrompt.toLowerCase();
     
     //Get input from the computer
     const computerSelection = ComputerPlay();
 
 
-    //Keep on trying to get input if player does not type in correctly
-    while (playerSelection != "rock" || playerSelection != "paper" || playerSelection != "scissors"  ) {
-        const playerSelectionPrompt = prompt("Rock, Paper, or Scissors?");
-        const playerSelection = playerSelectionPrompt.toLowerCase();
-    }
-
-   
     console.log("The Player plays " + playerSelection );
     console.log("The Computer plays " + computerSelection );
     
+
     if (playerSelection == computerSelection) {
         GameResult = "Tie";    
         console.log("Round is a tie")
@@ -85,11 +79,11 @@ function game() {
 function ComputerPlay() {
     let x = getRandomInt(3);   
 
-    if (x = 0) {
+    if (x == 0) {
         return "rock"; 
-    } else if (x = 1) {
+    } else if (x == 1) {
         return "paper";
-    } else if (x =2) {
+    } else if (x == 2) {
         return "scissors";
     }
     
