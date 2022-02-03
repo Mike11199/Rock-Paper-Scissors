@@ -1,16 +1,81 @@
-GetPlayerInput();
+let humanScore = 0;
+let computerScore = 0;
+let GameResult = "";
 
+while (humanScore < 5 && computerScore < 5 ) {
 
-function GetPlayerInput() {
-    
-    const playerSelection = prompt("Rock, Paper, or Scissors?");
-
+    game();
+    gameResult();
 }
 
-const computerSelection = ComputerPlay();
 
-console.log("The Player plays " + playerSelection );
-console.log("The Computer plays " + computerSelection );
+function gameResult() {
+
+    if (humanScore == 5) {
+        console.log("Human wins!")
+    } 
+    else if (computerScore == 5) {
+        console.log("Computer wins!")
+    }
+ 
+}
+
+
+function game() {
+
+    //Get input from the player
+    const playerSelectionPrompt = prompt("Rock, Paper, or Scissors?");
+    const playerSelection = playerSelectionPrompt.toLowerCase();
+    
+    //Get input from the computer
+    const computerSelection = ComputerPlay();
+
+
+    //Keep on trying to get input if player does not type in correctly
+    while (playerSelection != "rock" || playerSelection != "paper" || playerSelection != "scissors"  ) {
+        const playerSelectionPrompt = prompt("Rock, Paper, or Scissors?");
+        const playerSelection = playerSelectionPrompt.toLowerCase();
+    }
+
+   
+    console.log("The Player plays " + playerSelection );
+    console.log("The Computer plays " + computerSelection );
+    
+    if (playerSelection == computerSelection) {
+        GameResult = "Tie";    
+        console.log("Round is a tie")
+    }
+    else if (playerSelection == "rock") {
+        if (computerSelection == "paper") {
+            computerScore++;
+            console.log("Computer wins round.");
+        } else if (computerSelection == "scissors") {
+            humanScore++;
+            console.log("Human wins round.");
+        }
+    }
+    else if (playerSelection == "paper") {
+        if (computerSelection == "scissors") {
+            computerScore++;
+            console.log("Computer wins round.");
+        } else if (computerSelection == "rock") {
+            humanScore++;
+            console.log("Human wins round.");
+        }
+    }
+    else if (playerSelection == "scissors") {
+        if (computerSelection == "rock") {
+            computerScore++;
+            console.log("Computer wins round.");
+        } else if (computerSelection == "paper") {
+            humanScore++;
+            console.log("Human wins round.");
+        }
+    }
+
+
+  
+}
 
 
 
@@ -21,11 +86,11 @@ function ComputerPlay() {
     let x = getRandomInt(3);   
 
     if (x = 0) {
-        return "Rock"; 
+        return "rock"; 
     } else if (x = 1) {
-        return "Paper";
+        return "paper";
     } else if (x =2) {
-        return "Scissors";
+        return "scissors";
     }
     
 }
