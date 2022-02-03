@@ -1,4 +1,7 @@
-const playerSelection = window.prompt("Rock, Paper, or Scissors?");
+const myAnswer = prompt('Where are you from');
+console.log('I am from ' + myAnswer );
+
+const playerSelection = prompt("Rock, Paper, or Scissors?");
 const computerSelection = ComputerPlay();
 
 console.log("The Player plays " + playerSelection );
