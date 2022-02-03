@@ -1,7 +1,12 @@
-const myAnswer = prompt('Where are you from');
-console.log('I am from ' + myAnswer );
+GetPlayerInput();
 
-const playerSelection = prompt("Rock, Paper, or Scissors?");
+
+function GetPlayerInput() {
+    
+    const playerSelection = prompt("Rock, Paper, or Scissors?");
+
+}
+
 const computerSelection = ComputerPlay();
 
 console.log("The Player plays " + playerSelection );
