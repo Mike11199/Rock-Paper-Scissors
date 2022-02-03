@@ -1,15 +1,27 @@
-// function playRoundGame (playerSelection, computerSelection){
+const playerSelection = prompt("Rock, Paper, or Scissors?");
+const computerSelection = ComputerPlay();
+
+console.log("The Player plays " + playerSelection );
+console.log("The Computer plays " + computerSelection );
 
 
 
 
-// }
 
-// function computerPlay (playerSelection, computerSelection){
+//This function chooses a choice for the computer based on the getRandomInt function
+function ComputerPlay() {
+    let x = getRandomInt(3);   
 
-// }
+    if (x = 0) {
+        return "Rock"; 
+    } else if (x = 1) {
+        return "Paper";
+    } else if (x =2) {
+        return "Scissors";
+    }
+    
+}
 
-console.log(getRandomInt(3));
 
 
 
@@ -30,18 +42,3 @@ function getRandomInt(max) {
     return RandomNumberforComputer
     
 }
-
-function ComputerChooses(num) {
-
-    
-
-
-}
-
-
-
-//test code here
-
-// const playerSelection = "rock";
-// const computerSelection = computerPlay();
-// console.log(playRound(playerSelection, computerSelection));
