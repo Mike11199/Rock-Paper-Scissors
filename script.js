@@ -17,7 +17,7 @@ while (humanScore < 5 && computerScore < 5 ) {
   
                game();
                gameResult();
-               gameTextField.textContent ='test';
+               
               
      
 }
@@ -27,10 +27,10 @@ while (humanScore < 5 && computerScore < 5 ) {
 function gameResult() {
 
     if (humanScore == 5) {
-        console.log("Human wins!")
+        gameTextField.textContent ="Human wins!";
     } 
     else if (computerScore == 5) {
-        console.log("Computer wins!")
+        gameTextField.textContent ="Computer wins!";
     }
  
 }
