@@ -1,6 +1,10 @@
 * {
     
+<<<<<<< HEAD
     /* border: 2px solid red; */
+=======
+    border: 2px solid red;
+>>>>>>> ab4e1d2 (aligned divs)
 }
 
 html, body {
@@ -108,6 +112,7 @@ p {
     width: 200px;
     align-self: start;
     
+<<<<<<< HEAD
 }
 
 .scissors_image {
@@ -125,4 +130,6 @@ p {
     width: 180px;
     align-self: center;
     
+=======
+>>>>>>> ab4e1d2 (aligned divs)
 }
