@@ -7,8 +7,10 @@ function PlayGame() {
      
 while (humanScore < 5 && computerScore < 5 ) {
 
-     game();
-     gameResult();
+     setTimeout(function() {
+               game();
+               gameResult();
+     }, 100);
 }
      
 }
