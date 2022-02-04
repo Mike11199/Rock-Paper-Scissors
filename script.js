@@ -1,10 +1,13 @@
 let humanScore = 0;
 let computerScore = 0;
 let GameResult = "";
-const gameText = document.querySelector('#gameButton');
+const gameButton = document.querySelector('#gameButton');
 const gameText = document.querySelector('#gameText');
 
-gameButton.addEventListener ("click", PlayGame, false);
+
+gameButton.addEventListener ("click", () => {
+    PlayGame();
+});
 
 
 function PlayGame() {
@@ -18,7 +21,7 @@ while (humanScore < 5 && computerScore < 5 ) {
               
      
 }
-
+}
 
 
 function gameResult() {
