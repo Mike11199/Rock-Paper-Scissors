@@ -127,4 +127,5 @@ p {
 .result_text {
     color: red;
     font-family: Arial, Helvetica, sans-serif;
+    height: 25px;
 }
