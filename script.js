@@ -28,9 +28,13 @@ function gameResult() {
 
     if (humanScore == 5) {
         gameTextField.textContent ="Human wins!";
+        humanScore = 0;
+        computerScore = 0;
     } 
     else if (computerScore == 5) {
         gameTextField.textContent ="Computer wins!";
+        humanScore = 0;
+        computerScore = 0;
     }
  
 }
