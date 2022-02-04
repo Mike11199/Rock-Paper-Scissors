@@ -4,11 +4,11 @@ let GameResult = "";
 
 
 
-// while (humanScore < 5 && computerScore < 5 ) {
+while (humanScore < 5 && computerScore < 5 ) {
 
-//     game();
-//     gameResult();
-// }
+     game();
+     gameResult();
+}
 
 
 
