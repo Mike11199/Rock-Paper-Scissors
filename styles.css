@@ -1,6 +1,6 @@
 * {
     
-    border: 2px solid red;
+    /* border: 2px solid red; */
 }
 
 html, body {
@@ -107,5 +107,22 @@ p {
     height: 200px;
     width: 200px;
     align-self: start;
+    
+}
+
+.scissors_image {
+    height: 200px;
+    width: 200px;
+}
+
+.paper_image {
+    height: 200px;
+    width: 200px;
+}
+
+.rock_image {
+    height: 180px;
+    width: 180px;
+    align-self: center;
     
 }
