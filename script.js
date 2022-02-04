@@ -1,6 +1,8 @@
 let humanScore = 0;
 let computerScore = 0;
 let GameResult = "";
+let playerSelectionPrompt = "";
+let playerSelection = "";
 
 
 
