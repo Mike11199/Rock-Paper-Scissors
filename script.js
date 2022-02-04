@@ -2,11 +2,15 @@ let humanScore = 0;
 let computerScore = 0;
 let GameResult = "";
 
-while (humanScore < 5 && computerScore < 5 ) {
 
-    game();
-    gameResult();
-}
+
+// while (humanScore < 5 && computerScore < 5 ) {
+
+//     game();
+//     gameResult();
+// }
+
+
 
 
 function gameResult() {
