@@ -12,7 +12,6 @@ while (humanScore < 5 && computerScore < 5 ) {
 
 
 
-
 function gameResult() {
 
     if (humanScore == 5) {
