@@ -3,11 +3,14 @@ let computerScore = 0;
 let GameResult = "";
 
 
-
+function PlayGame() {
+     
 while (humanScore < 5 && computerScore < 5 ) {
 
      game();
      gameResult();
+}
+     
 }
 
 
