@@ -2,6 +2,8 @@ let humanScore = 0;
 let computerScore = 0;
 let GameResult = "";
 const gameText = document.querySelector('#gameText');
+gameText.addEventListener ("click", PlayGame, false);
+
 
 function PlayGame() {
      
