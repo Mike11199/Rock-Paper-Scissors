@@ -63,13 +63,10 @@ function gameResult() {
 
     if (humanScore == 5) {
         gameTextField.textContent ="Human wins!";
-<<<<<<< HEAD
-
     } 
     else if (computerScore == 5) {
         gameTextField.textContent ="Computer wins!";
-
-}
+    }
 }
 
 function reset_Score_if_NewGame() {
@@ -87,7 +84,7 @@ function reset_Score_if_NewGame() {
         Computer_Score_Box.textContent = 0;
         humanScore=0;
         computerScore=0;
-=======
+
         humanScore = 0;
         computerScore = 0;
     } 
@@ -95,7 +92,6 @@ function reset_Score_if_NewGame() {
         gameTextField.textContent ="Computer wins!";
         humanScore = 0;
         computerScore = 0;
->>>>>>> 1223523ca57e1c9c11a3a34693ba47c31cdaf404
     }
     
 }
