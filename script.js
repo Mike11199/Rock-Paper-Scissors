@@ -47,8 +47,6 @@ function UpdateScoreBoxes() {
 
 }
 
-
-
 function PlayGame() {
      
                reset_Score_if_NewGame()
