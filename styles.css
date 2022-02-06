@@ -1,4 +1,6 @@
-
+* {
+    /* border: 2px solid red; */
+}
 
 html, body {
     height: 100%;
@@ -120,7 +122,7 @@ p {
 .rock_image {
     height: 180px;
     width: 180px;
-    align-self: center;
+    align-self: center;   
     
 }
 
@@ -128,4 +130,30 @@ p {
     color: red;
     font-family: Arial, Helvetica, sans-serif;
     height: 25px;
+}
+
+
+.Score_Container {
+    display: flex;
+    height: 100px;
+    gap: 35px;
+    flex: auto;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+
+  }
+
+.Human_Score_Box{
+    width: 200px;
+    height: 100px;
+    color: red;
+}
+
+ 
+
+.Computer_Score_Box{
+    width: 200px;
+    height: 100px;
+    color: red;
 }

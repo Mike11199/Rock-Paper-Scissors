@@ -5,16 +5,35 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="styles.css" />
-    <script src= "script.js" defer></script>
+    
     <title>Document</title>
 </head>
 <body>
 
     <p>  Press the button to play a 5 round game of Rock, Paper, Scissors! </p>
-    <button id="gameButton">Click me</button>
+    <button id="resetButton">Reset Game</button>
     <div class= "result_text" id="gameText"></div>
     <p></p>
-    <p>  You will have to press F12 to access developer tools, and view output in the console window to play. </p>
+    
+    <div class = "Score_Container">
+
+        <div class="human_boxes">
+            <div class = "Human_Score_Box_Title">
+                <P>Human Score</P>
+            </div>
+            <div class = "Human_Score_Box">
+            </div>
+        </div>
+
+        <div class="computer_boxes">
+            <div class = "Computer_Score_Box_Title">
+                <P>Computer Score</P>
+            </div>
+            <div class = "Computer_Score_Box">
+            </div>
+        </div>
+
+    </div>
 
 
     <div class = "image_container">
@@ -46,5 +65,6 @@
 
 
 </body>
+<script src= "script.js"></script>
 </html>
 

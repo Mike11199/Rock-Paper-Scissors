@@ -1,26 +1,61 @@
 let humanScore = 0;
 let computerScore = 0;
 let GameResult = "";
-const gameButton = document.querySelector('#gameButton');
+const resetButton = document.querySelector('#resetButton');
 const gameTextField = document.querySelector('#gameText');
+let playerSelection = "";
+
+let rockImage = document.querySelector('.rock_image');
+let paperImage = document.querySelector('.paper_image');
+let scissorsImage = document.querySelector('.scissors_image');
+
+let Human_Score_Box = document.querySelector('.Human_Score_Box');
+let Computer_Score_Box = document.querySelector('.Computer_Score_Box');
 
 
-gameButton.addEventListener ("click", () => {
+rockImage.addEventListener ("click", () => {
+    playerSelection = "rock";
+    PlayGame();
+});
+
+paperImage.addEventListener ("click", () => {
+    playerSelection = "paper";
+    PlayGame();
+});
+
+scissorsImage.addEventListener ("click", () => {
+    playerSelection = "scissors";
     PlayGame();
 });
 
 
+
+resetButton.addEventListener ("click", () => {
+    
+    humanScore = 0;
+    computerScore = 0;
+
+
+
+    gameTextField.textContent ="";
+});
+
+function UpdateScoreBoxes() {
+    Human_Score_Box.textContent = humanScore
+    Computer_Score_Box.textContent = computerScore
+
+}
+
+
+
 function PlayGame() {
      
-while (humanScore < 5 && computerScore < 5 ) {
-
-  
+               reset_Score_if_NewGame()
                game();
+               UpdateScoreBoxes()
                gameResult();
                
-              
-     
-}
+ 
 }
 
 
@@ -28,19 +63,38 @@ function gameResult() {
 
     if (humanScore == 5) {
         gameTextField.textContent ="Human wins!";
+
     } 
     else if (computerScore == 5) {
         gameTextField.textContent ="Computer wins!";
-    }
- 
+
 }
+}
+
+function reset_Score_if_NewGame() {
+    //Get input from the player
+    if (humanScore == 5) {
+        gameTextField.textContent ="";
+        Human_Score_Box.textContent = 0;
+        Computer_Score_Box.textContent = 0;
+        humanScore=0;
+        computerScore=0;
+    } 
+    else if (computerScore == 5) {
+        gameTextField.textContent ="";
+        Human_Score_Box.textContent = 0;
+        Computer_Score_Box.textContent = 0;
+        humanScore=0;
+        computerScore=0;
+    }
+    
+}
+
 
 
 function game() {
 
-    //Get input from the player
-    let playerSelectionPrompt = prompt("Rock, Paper, or Scissors?");
-    let playerSelection = playerSelectionPrompt.toLowerCase();
+
     
     //Get input from the computer
     const computerSelection = ComputerPlay();
