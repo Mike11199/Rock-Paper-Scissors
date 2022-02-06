@@ -30,6 +30,7 @@ scissorsImage.addEventListener ("click", () => {
 
 
 
+
 resetButton.addEventListener ("click", () => {
     
     humanScore = 0;
