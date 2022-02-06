@@ -13,6 +13,11 @@ let Human_Score_Box = document.querySelector('.Human_Score_Box');
 let Computer_Score_Box = document.querySelector('.Computer_Score_Box');
 
 
+let Human_Text_Box = document.querySelector('.Human_Text_Box');
+let Computer_Text_Box = document.querySelector('.Computer_Text_Box');
+let Round_Result_Text = document.querySelector('.Round_Result_Text');
+
+
 rockImage.addEventListener ("click", () => {
     playerSelection = "rock";
     PlayGame();
@@ -108,36 +113,37 @@ function game() {
     console.log("The Player plays " + playerSelection );
     console.log("The Computer plays " + computerSelection );
     
+    Computer_Text_Box.textContent=("The Computer plays " + computerSelection );
+    Human_Text_Box.textContent=("The Player plays " + playerSelection );
 
     if (playerSelection == computerSelection) {
-        GameResult = "Tie";    
-        console.log("Round is a tie")
+            Round_Result_Text.textContent=("The round is a tie.");
     }
     else if (playerSelection == "rock") {
         if (computerSelection == "paper") {
             computerScore++;
-            console.log("Computer wins round.");
+            Round_Result_Text.textContent=("Computer wins round.");
         } else if (computerSelection == "scissors") {
             humanScore++;
-            console.log("Human wins round.");
+            Round_Result_Text.textContent=("Human wins round.");
         }
     }
     else if (playerSelection == "paper") {
         if (computerSelection == "scissors") {
             computerScore++;
-            console.log("Computer wins round.");
+            Round_Result_Text.textContent=("Computer wins round.");
         } else if (computerSelection == "rock") {
             humanScore++;
-            console.log("Human wins round.");
+            Round_Result_Text.textContent=("Human wins round.");
         }
     }
     else if (playerSelection == "scissors") {
         if (computerSelection == "rock") {
             computerScore++;
-            console.log("Computer wins round.");
+            Round_Result_Text.textContent=("Computer wins round.");
         } else if (computerSelection == "paper") {
             humanScore++;
-            console.log("Human wins round.");
+            Round_Result_Text.textContent=("Human wins round.");
         }
     }
 

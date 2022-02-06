@@ -135,7 +135,7 @@ p {
 
 .Score_Container {
     display: flex;
-    height: 100px;
+    height: 200px;
     gap: 35px;
     flex: auto;
     align-items: center;
@@ -156,4 +156,76 @@ p {
     width: 200px;
     height: 100px;
     color: red;
+}
+
+
+.Text_Container {
+    display: flex;
+    height: 100px;
+    gap: 300px;
+    flex: auto;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+
+  }
+
+.Human_Score_Box_Text{
+    width: 500px;
+    height: 100px;
+    color: red;
+}
+
+ 
+
+.Computer_Score_Box_Text{
+    width: 500px;
+    height: 100px;
+    color: red;
+}
+
+.human_boxes_Text{
+    width: 500px;
+    height: 100px;
+    color: red;
+}
+
+.computer_boxes_Text{
+    width: 500px;
+    height: 100px;
+    color: red;
+}
+
+.Round_Result {
+    display: flex;
+    
+    height: 100px;
+    color: red;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0px;
+    
+
+}
+
+.Round_Result_Text{
+    display: flex;
+    width: 500px;
+    height: 100px;
+    color: red;
+    justify-content: center;
+    margin: 0px;
+    
+}
+
+.Round_Result_Box_Title {
+    display: flex;
+    width: 500px;
+    height: 100px;
+    color: red;
+    justify-content: center;
+    margin: 0px;
+    
+
 }
