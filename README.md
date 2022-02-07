@@ -6,4 +6,4 @@ Javascript/HTML Project
 
  <br /> 
  
-![rps game](https://user-images.githubusercontent.com/91037796/152712758-dfcb264a-b35d-40f1-8454-2ba46fcfd77d.png)
+![rps game](https://user-images.githubusercontent.com/91037796/152716055-f98b1ca4-a834-4220-8e6c-199161dd953f.png)
