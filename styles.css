@@ -91,7 +91,7 @@ h4 {
 .image_button_middle {
     height: 200px;
     width: 200px;
-    
+    transition: transform .2s;  
 }
 
 
@@ -112,12 +112,12 @@ h4 {
 
 .scissors_image {
     height: 200px;
-    
+    transition: transform .2s;  
 }
 
 
 .scissors_image:hover {
-    color: #ffee10;
+    transform: scale(1.1);
     box-shadow: 0 0 20px red;
     text-shadow: 0 0 25px red;
   }
@@ -128,12 +128,14 @@ h4 {
 .paper_image {
     height: 200px;
     width: 200px;
+    transition: transform .2s;  
 }
 
 .paper_image:hover {
-    
+    transform: scale(1.1);
     box-shadow: 0 0 20px red;
     text-shadow: 0 0 25px red;
+
 }
 
 
@@ -148,6 +150,7 @@ h4 {
     
     box-shadow: 0 0 20px red;
     text-shadow: 0 0 25px red;
+    transform: scale(1.1);
   }
 
 
@@ -241,7 +244,7 @@ h4 {
     display: flex;
     width: 500px;
     height: 100px;
-    color: orange;
+    color: darkorange;
     justify-content: center;
     margin: 0px;
     font-weight: 700;

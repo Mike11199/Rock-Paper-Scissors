@@ -28,6 +28,8 @@ let image_text_middle_computer = document.querySelector('.image_text_middle_comp
 let image_text_right_human = document.querySelector('.image_text_right_human');
 let image_text_right_computer = document.querySelector('.image_text_right_computer');
 
+let image_button_middle = document.querySelector('.image_button_middle');
+
 
 
 
@@ -159,7 +161,7 @@ function game() {
     const computerSelection = ComputerPlay();
     
     if (computerSelection == 'rock') {
-        highlightComputer(rockImage);
+        highlightComputer(image_button_middle);
         image_text_middle_computer.textContent="Computer plays Rock";
     }
     else if (computerSelection == 'paper'){
