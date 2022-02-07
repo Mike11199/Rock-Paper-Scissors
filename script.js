@@ -18,17 +18,39 @@ let Computer_Text_Box = document.querySelector('.Computer_Text_Box');
 let Round_Result_Text = document.querySelector('.Round_Result_Text');
 
 
+// left is paper, middle is rock, right is scissors
+let image_text_left_human = document.querySelector('.image_text_left_human');
+let image_text_left_computer = document.querySelector('.image_text_left_computer');
+
+let image_text_middle_human = document.querySelector('.image_text_middle_human');
+let image_text_middle_computer = document.querySelector('.image_text_middle_computer');
+
+let image_text_right_human = document.querySelector('.image_text_right_human');
+let image_text_right_computer = document.querySelector('.image_text_right_computer');
+
+
+
+
+
+
 rockImage.addEventListener ("click", () => {
+    clearMovesText();
+    playerSelection = "rock";
+    image_text_middle_human.textContent="Human plays Rock";
     PlayGame();
 });
 
 paperImage.addEventListener ("click", () => {
+    clearMovesText();
     playerSelection = "paper";
+    image_text_left_human.textContent="Human plays Paper";
     PlayGame();
 });
 
 scissorsImage.addEventListener ("click", () => {
+    clearMovesText();
     playerSelection = "scissors";
+    image_text_right_human.textContent="Human plays Scissors";
     PlayGame();
 });
 
@@ -54,7 +76,8 @@ function UpdateScoreBoxes() {
 
 function PlayGame() {
      
-               reset_Score_if_NewGame()
+               reset_Score_if_NewGame();
+               
                game();
                UpdateScoreBoxes()
                gameResult();
@@ -113,30 +136,45 @@ function highlightComputer (object) {
 }
 
 
+function clearMovesText(){
+    image_text_left_computer.textContent="";
+    image_text_left_human.textContent="";
+    
+    image_text_middle_computer.textContent="";
+    image_text_middle_human.textContent="";
+
+    image_text_right_computer.textContent="";
+    image_text_right_human.textContent="";
+}
+
+
 
 function game() {
 
-
+    // left is paper, middle is rock, right is scissors
     
     //Get input from the computer
+
+
     const computerSelection = ComputerPlay();
     
     if (computerSelection == 'rock') {
         highlightComputer(rockImage);
+        image_text_middle_computer.textContent="Computer plays Rock";
     }
     else if (computerSelection == 'paper'){
         highlightComputer(paperImage);
+        image_text_left_computer.textContent="Computer plays Paper";
     }
     else if (computerSelection == 'scissors'){
         highlightComputer(scissorsImage);
+        image_text_right_computer.textContent="Computer plays Scissors";
     }
 
 
     console.log("The Player plays " + playerSelection );
     console.log("The Computer plays " + computerSelection );
     
-    Computer_Text_Box.textContent=("The Computer plays " + computerSelection );
-    Human_Text_Box.textContent=("The Player plays " + playerSelection );
 
     if (playerSelection == computerSelection) {
             Round_Result_Text.textContent=("The round is a tie.");

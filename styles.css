@@ -1,5 +1,5 @@
 * {
-    /* border: 2px solid red; */
+     /* border: 2px solid red;  */
 }
 
 html, body {
@@ -154,7 +154,7 @@ h4 {
 .result_text {
     color: red;
     
-    height: 25px;
+    height: 200px;
 }
 
 
@@ -227,7 +227,6 @@ h4 {
 
 .Round_Result {
     display: flex;
-    
     height: 100px;
     color: red;
     align-items: center;
@@ -285,4 +284,54 @@ h4 {
     width: 100px;
     height: 50px;
     border-width: 0px;
+}
+
+.image_text_left_human{
+    height: 30px;
+    width: 200px;
+    display: flex;
+    color: red;
+    align-self: end;
+}
+
+
+.image_text_left_computer{
+    height: 30px;
+    width: 200px;
+    color: green;
+    display: flex;
+    align-self: end;
+}
+
+
+.image_text_middle_human{
+    height: 30px;
+    width: 200px;
+    display: flex;
+    color: red;
+}
+
+
+.image_text_middle_computer{
+    height: 30px;
+    width: 200px;
+    color: green;
+    display: flex;
+}
+
+.image_text_right_human{
+    height: 30px;
+    width: 200px;
+    display: flex;
+    color: red;
+    align-self: start;
+}
+
+
+.image_text_right_computer{
+    height: 30px;
+    width: 200px;
+    color: green;
+    display: flex;
+    align-self: start;
 }
