@@ -15,4 +15,4 @@ Concepts Learned from this project:
 -CSS for a transition (transform) and scale when hovering over an image of rock/paper/scissors or the reset button. <br /> 
 -Creating a JavaScript function to generate a random number between 0 and 2 (for the computer's move). <br /> <br /> 
  
-![rps game](https://user-images.githubusercontent.com/91037796/152716055-f98b1ca4-a834-4220-8e6c-199161dd953f.png)
+![rps game](https://user-images.githubusercontent.com/91037796/152717849-1169578e-2167-4a71-859b-8ff5678f506e.png)
