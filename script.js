@@ -30,7 +30,8 @@ let image_text_right_computer = document.querySelector('.image_text_right_comput
 
 let image_button_middle = document.querySelector('.image_button_middle');
 
-
+Human_Score_Box.textContent = '0';
+Computer_Score_Box.textContent = '0';
 
 
 
@@ -61,13 +62,16 @@ scissorsImage.addEventListener ("click", () => {
 
 resetButton.addEventListener ("click", () => {
     
+    Round_Result_Text.textContent=("");
+    clearMovesText();
     humanScore = 0;
     computerScore = 0;
-    Human_Score_Box.textContent = ''
-    Computer_Score_Box.textContent = ''
+    Human_Score_Box.textContent = '0'
+    Computer_Score_Box.textContent = '0'
     gameTextField.textContent ="";
     Computer_Text_Box.textContent=("");
     Human_Text_Box.textContent=("");
+    
 });
 
 function UpdateScoreBoxes() {
@@ -78,11 +82,10 @@ function UpdateScoreBoxes() {
 
 function PlayGame() {
      
-               reset_Score_if_NewGame();
-               
-               game();
-               UpdateScoreBoxes()
-               gameResult();
+    reset_Score_if_NewGame();
+    game();
+    UpdateScoreBoxes()
+    gameResult();
                
  
 }
