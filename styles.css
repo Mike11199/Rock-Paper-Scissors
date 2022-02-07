@@ -376,3 +376,10 @@ h4 {
     margin: auto;
     align-self: center;
 }
+
+.copyright {
+    color: bisque;
+    font-size: 10px;
+    padding-top: 150px;
+
+}
