@@ -19,7 +19,6 @@ let Round_Result_Text = document.querySelector('.Round_Result_Text');
 
 
 rockImage.addEventListener ("click", () => {
-    playerSelection = "rock";
     PlayGame();
 });
 
@@ -40,10 +39,11 @@ resetButton.addEventListener ("click", () => {
     
     humanScore = 0;
     computerScore = 0;
-
-
-
+    Human_Score_Box.textContent = ''
+    Computer_Score_Box.textContent = ''
     gameTextField.textContent ="";
+    Computer_Text_Box.textContent=("");
+    Human_Text_Box.textContent=("");
 });
 
 function UpdateScoreBoxes() {
@@ -101,6 +101,18 @@ function reset_Score_if_NewGame() {
 }
 
 
+function highlightComputer (object) {
+    
+    setTimeout(function(){
+        object.style.cssText = 'box-shadow: 0 0 50px green; text-shadow: 0 0 50px green';
+       }, 10);
+    setTimeout(function(){
+    object.style.cssText = '';
+   }, 1000);
+        
+}
+
+
 
 function game() {
 
@@ -108,6 +120,16 @@ function game() {
     
     //Get input from the computer
     const computerSelection = ComputerPlay();
+    
+    if (computerSelection == 'rock') {
+        highlightComputer(rockImage);
+    }
+    else if (computerSelection == 'paper'){
+        highlightComputer(paperImage);
+    }
+    else if (computerSelection == 'scissors'){
+        highlightComputer(scissorsImage);
+    }
 
 
     console.log("The Player plays " + playerSelection );
