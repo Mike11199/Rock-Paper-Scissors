@@ -413,6 +413,7 @@
    h4 {
        color: darkorange;
        font-weight: 700;
+       font-size: 14px;
        
    }
    
@@ -578,7 +579,7 @@
        color: red;
        margin: 0px;
        padding-top: 5px;
-       font-size: large;
+       font-size: 14px;
    }
    
     
@@ -588,7 +589,7 @@
        height: 50px;
        color: red;
        padding-top: 5px;
-       font-size: large;
+       font-size: 14px;
    }
    
    
@@ -607,6 +608,7 @@
        width: 250px;
        height: 100px;
        color: red;
+       
        
    }
    
@@ -671,7 +673,7 @@
    
    .Computer_Score_Box_Title{
        
-       
+       font-size: 12px;
        height: 30px;
        color: white;
        background-color:darkgreen;
@@ -683,6 +685,7 @@
    
    .Human_Score_Box_Title{
        
+       font-size: 12px;
        background-color:darkred;
        height: 30px;
        color: white;
