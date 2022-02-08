@@ -1,386 +1,786 @@
-* {
-     /* border: 2px solid red;   */
-}
 
-html, body {
-    height: 100%;
-    background-color:black;
-    margin: 0px;
-    text-align: center;
-    font-family:Arial, Helvetica, sans-serif;
-  }
+/* If the browser window is 601px OR LARGER; CSS is this for desktop sized screens */
+@media only screen and (min-width: 601px) {
 
+    * {
+        /* border: 2px solid red;   */
+    }
 
-
-h4 {
-    color: darkorange;
-    font-weight: 700;
-    
-}
-
-
-.image_container {
-    display: flex;
-    flex-direction: row;
-    height: 30%;
-    width: 100%;
-    align-items: center;
-    background-color: black;
-}
+    html, body {
+        height: 100%;
+        background-color:black;
+        margin: 0px;
+        text-align: center;
+        font-family:Arial, Helvetica, sans-serif;
+    }
 
 
 
-
-.container_left {
-    display: flex;
-    width: 200px;
-    flex: auto;
-    flex-direction: column;
-    align-items: center;
-    
-    
-    
-}
+    h4 {
+        color: darkorange;
+        font-weight: 700;
+        
+    }
 
 
-.container_middle {
-    display: flex;
-    width: 200px;
-    flex: auto;
-    align-items: center;
-    flex-direction: column;
-    
-}
-
-
-.container_right {
-    display: flex;
-    
-    width: 200px;
-    flex: auto;
-    align-items: center;
-    flex-direction: column;
-    
-}
-
-
-
-.image_text_left {
-    height: 50px;
-    width: 200px;
-    align-self: end;
-    
-    
-}
-
-.image_button_left {
-    height: 200px;
-    width: 200px;
-    align-self: end;
-}
-
-
-
-.image_text_middle {
-    height: 50px;
-    width: 200px;
-    
-    
-}
-
-.image_button_middle {
-    height: 200px;
-    width: 200px;
-    transition: transform .2s;  
-}
-
-
-
-.image_text_right {
-    height: 50px;
-    width: 200px;
-    align-self: start;
-    
-}
-
-.image_button_right {
-    height: 200px;
-    width: 200px;
-    align-self: start;
-    
-}
-
-.scissors_image {
-    height: 200px;
-    transition: transform .2s;  
-}
-
-
-.scissors_image:hover {
-    transform: scale(1.1);
-    box-shadow: 0 0 20px red;
-    text-shadow: 0 0 25px red;
-  }
+    .image_container {
+        display: flex;
+        flex-direction: row;
+        height: 30%;
+        width: 100%;
+        align-items: center;
+        background-color: black;
+    }
 
 
 
 
-.paper_image {
-    height: 200px;
-    width: 200px;
-    transition: transform .2s;  
-}
-
-.paper_image:hover {
-    transform: scale(1.1);
-    box-shadow: 0 0 20px red;
-    text-shadow: 0 0 25px red;
-
-}
+    .container_left {
+        display: flex;
+        width: 200px;
+        flex: auto;
+        flex-direction: column;
+        align-items: center;
+        
+        
+        
+    }
 
 
-.rock_image {
-    height: 180px;
-    width: 180px;
-    align-self: center;   
-    
-}
-
-.image_button_middle:hover {
-    
-    box-shadow: 0 0 20px red;
-    text-shadow: 0 0 25px red;
-    transform: scale(1.1);
-  }
+    .container_middle {
+        display: flex;
+        width: 200px;
+        flex: auto;
+        align-items: center;
+        flex-direction: column;
+        
+    }
 
 
-.result_text {
-    color: red;
-    height: 30px;
-    font-size: large;
-    font-weight: 800;
-    padding-top: 25px;
-}
+    .container_right {
+        display: flex;
+        
+        width: 200px;
+        flex: auto;
+        align-items: center;
+        flex-direction: column;
+        
+    }
 
 
-.Score_Container {
-    display: flex;
-    height: 150px;
-    gap: 35px;
-    flex: auto;
-    align-items: center;
-    justify-content: center;
-    flex-direction: row;
 
-  }
+    .image_text_left {
+        height: 50px;
+        width: 200px;
+        align-self: end;
+        
+        
+    }
 
-.Human_Score_Box{
-    width: 200px;
-    height: 50px;
-    color: red;
-    margin: 0px;
-    padding-top: 5px;
-    font-size: large;
-}
-
- 
-
-.Computer_Score_Box{
-    width: 200px;
-    height: 50px;
-    color: red;
-    padding-top: 5px;
-    font-size: large;
-}
+    .image_button_left {
+        height: 200px;
+        width: 200px;
+        align-self: end;
+    }
 
 
-.Text_Container {
-    display: flex;
-    height: 100px;
-    gap: 300px;
-    flex: auto;
-    align-items: center;
-    justify-content: center;
-    flex-direction: row;
 
-  }
+    .image_text_middle {
+        height: 50px;
+        width: 200px;
+        
+        
+    }
 
-.Human_Score_Box_Text{
-    width: 500px;
-    height: 100px;
-    color: red;
-    
-}
+    .image_button_middle {
+        height: 200px;
+        width: 200px;
+        transition: transform .2s;  
+    }
 
- 
 
-.Computer_Score_Box_Text{
-    width: 500px;
-    height: 100px;
-    color: red;
-    
-}
 
-.human_boxes_Text{
-    width: 500px;
-    height: 100px;
-    color: red;
-    
-}
+    .image_text_right {
+        height: 50px;
+        width: 200px;
+        align-self: start;
+        
+    }
 
-.computer_boxes_Text{
-    width: 500px;
-    height: 100px;
-    color: red;
-    
-}
+    .image_button_right {
+        height: 200px;
+        width: 200px;
+        align-self: start;
+        
+    }
 
-.Round_Result {
-    display: flex;
-    height: 100px;
-    color: red;
-    align-items: center;
-    flex-direction: column;
-    justify-content: center;
-    margin: 0px;
-    
+    .scissors_image {
+        height: 200px;
+        transition: transform .2s;  
+    }
+
+
+    .scissors_image:hover {
+        transform: scale(1.1);
+        box-shadow: 0 0 20px red;
+        text-shadow: 0 0 25px red;
+    }
+
+
+
+
+    .paper_image {
+        height: 200px;
+        width: 200px;
+        transition: transform .2s;  
+    }
+
+    .paper_image:hover {
+        transform: scale(1.1);
+        box-shadow: 0 0 20px red;
+        text-shadow: 0 0 25px red;
+
+    }
+
+
+    .rock_image {
+        height: 180px;
+        width: 180px;
+        align-self: center;   
+        
+    }
+
+    .image_button_middle:hover {
+        
+        box-shadow: 0 0 20px red;
+        text-shadow: 0 0 25px red;
+        transform: scale(1.1);
+    }
+
+
+    .result_text {
+        color: red;
+        height: 30px;
+        font-size: large;
+        font-weight: 800;
+        padding-top: 25px;
+    }
+
+
+    .Score_Container {
+        display: flex;
+        height: 150px;
+        gap: 35px;
+        flex: auto;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+
+    }
+
+    .Human_Score_Box{
+        width: 200px;
+        height: 50px;
+        color: red;
+        margin: 0px;
+        padding-top: 5px;
+        font-size: large;
+    }
+
     
 
-}
+    .Computer_Score_Box{
+        width: 200px;
+        height: 50px;
+        color: red;
+        padding-top: 5px;
+        font-size: large;
+    }
 
-.Round_Result_Text{
-    display: flex;
-    width: 500px;
-    height: 100px;
-    color: darkorange;
-    justify-content: center;
-    margin: 0px;
-    font-weight: 700;
+
+    .Text_Container {
+        display: flex;
+        height: 100px;
+        gap: 300px;
+        flex: auto;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+
+    }
+
+    .Human_Score_Box_Text{
+        width: 500px;
+        height: 100px;
+        color: red;
+        
+    }
+
     
+
+    .Computer_Score_Box_Text{
+        width: 500px;
+        height: 100px;
+        color: red;
+        
+    }
+
+    .human_boxes_Text{
+        width: 500px;
+        height: 100px;
+        color: red;
+        
+    }
+
+    .computer_boxes_Text{
+        width: 500px;
+        height: 100px;
+        color: red;
+        
+    }
+
+    .Round_Result {
+        display: flex;
+        height: 100px;
+        color: red;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        margin: 0px;
+        
+        
+
+    }
+
+    .Round_Result_Text{
+        display: flex;
+        width: 500px;
+        height: 100px;
+        color: darkorange;
+        justify-content: center;
+        margin: 0px;
+        font-weight: 700;
+        
+        
+    }
+
+    .Round_Result_Box_Title {
+        display: flex;
+        width: 500px;
+        height: 100px;
+        color: red;
+        justify-content: center;
+        margin: 0px;
+
+    }
+
+
+    .Computer_Score_Box_Title{
+        
+        
+        height: 30px;
+        color: white;
+        background-color:darkgreen;
+        display: flex;
+        flex-direction: row;
+        
+        
+    }
+
+    .Human_Score_Box_Title{
+        
+        background-color:darkred;
+        height: 30px;
+        color: white;
+        display: flex;
+        flex-direction: row;
+        
+        
+    }
+
+    #resetButton {
+
+        color: white;
+        background-color: darkblue;
+        width: 100px;
+        height: 50px;
+        border-width: 0px;
+        transition: transform .2s;  
+    }
+
+    #resetButton:hover {
+
+        box-shadow: 0 0 20px red;
+        transform: scale(1.1);
+
+    }
+
+    #resetButton:active {
+
+        box-shadow: 0 0 50px red;
+    }
+
+    .image_text_left_human{
+        height: 30px;
+        width: 200px;
+        display: flex;
+        color: red;
+        align-self: end;
+    }
+
+
+    .image_text_left_computer{
+        height: 30px;
+        width: 200px;
+        color: green;
+        display: flex;
+        align-self: end;
+    }
+
+
+    .image_text_middle_human{
+        height: 30px;
+        width: 200px;
+        display: flex;
+        color: red;
+    }
+
+
+    .image_text_middle_computer{
+        height: 30px;
+        width: 200px;
+        color: green;
+        display: flex;
+    }
+
+    .image_text_right_human{
+        height: 30px;
+        width: 200px;
+        display: flex;
+        color: red;
+        align-self: start;
+    }
+
+
+    .image_text_right_computer{
+        height: 30px;
+        width: 200px;
+        color: green;
+        display: flex;
+        align-self: start;
+    }
+
+
+    .computer_score_paragraph{
+        margin: auto;
+        align-self: center;
+    }
+
+    .human_score_paragraph{
+        margin: auto;
+        align-self: center;
+    }
+
+    .copyright {
     
-}
+        color: bisque;
+        font-size: 10px;
+        padding-top: 150px;
 
-.Round_Result_Box_Title {
-    display: flex;
-    width: 500px;
-    height: 100px;
-    color: red;
-    justify-content: center;
-    margin: 0px;
+    }
 
 }
 
 
-.Computer_Score_Box_Title{
-    
-    
-    height: 30px;
-    color: white;
-    background-color:darkgreen;
-    display: flex;
-    flex-direction: row;
-    
-    
-}
 
-.Human_Score_Box_Title{
-    
-    background-color:darkred;
-    height: 30px;
-    color: white;
-    display: flex;
-    flex-direction: row;
-    
-    
-}
+/* If the browser window is 600px OR SMALLER; CSS is this for mobile/phone sized screens*/
+@media only screen and (max-width: 600px) {
 
-#resetButton {
-
-    color: white;
-    background-color: darkblue;
-    width: 100px;
-    height: 50px;
-    border-width: 0px;
-    transition: transform .2s;  
-}
-
-#resetButton:hover {
-
-    box-shadow: 0 0 20px red;
-    transform: scale(1.1);
-
-}
-
-#resetButton:active {
-
-    box-shadow: 0 0 50px red;
-}
-
-.image_text_left_human{
-    height: 30px;
-    width: 200px;
-    display: flex;
-    color: red;
-    align-self: end;
-}
-
-
-.image_text_left_computer{
-    height: 30px;
-    width: 200px;
-    color: green;
-    display: flex;
-    align-self: end;
-}
-
-
-.image_text_middle_human{
-    height: 30px;
-    width: 200px;
-    display: flex;
-    color: red;
-}
-
-
-.image_text_middle_computer{
-    height: 30px;
-    width: 200px;
-    color: green;
-    display: flex;
-}
-
-.image_text_right_human{
-    height: 30px;
-    width: 200px;
-    display: flex;
-    color: red;
-    align-self: start;
-}
-
-
-.image_text_right_computer{
-    height: 30px;
-    width: 200px;
-    color: green;
-    display: flex;
-    align-self: start;
-}
-
-
-.computer_score_paragraph{
-    margin: auto;
-    align-self: center;
-}
-
-.human_score_paragraph{
-    margin: auto;
-    align-self: center;
-}
-
-.copyright {
+    * {
+        border: 2px solid red;   
+   }
    
-    color: bisque;
-    font-size: 10px;
-    padding-top: 150px;
+   html, body {
+       height: 100%;
+       background-color:black;
+       margin: 0px;
+       text-align: center;
+       font-family:Arial, Helvetica, sans-serif;
+     }
+   
+   
+   
+   h4 {
+       color: darkorange;
+       font-weight: 700;
+       
+   }
+   
+   
+   .image_container {
+       display: flex;
+       flex-direction: row;
+       height: 30%;
+       width: 100%;
+       align-items: center;
+       background-color: black;
+   }
+   
+   
+   
+   
+   .container_left {
+       display: flex;
+       width: 200px;
+       flex: auto;
+       flex-direction: column;
+       align-items: center;
+       
+       
+       
+   }
+   
+   
+   .container_middle {
+       display: flex;
+       width: 200px;
+       flex: auto;
+       align-items: center;
+       flex-direction: column;
+       
+   }
+   
+   
+   .container_right {
+       display: flex;
+       
+       width: 200px;
+       flex: auto;
+       align-items: center;
+       flex-direction: column;
+       
+   }
+   
+   
+   
+   .image_text_left {
+       height: 50px;
+       width: 200px;
+       align-self: end;
+       
+       
+   }
+   
+   .image_button_left {
+       height: 200px;
+       width: 200px;
+       align-self: end;
+   }
+   
+   
+   
+   .image_text_middle {
+       height: 50px;
+       width: 200px;
+       
+       
+   }
+   
+   .image_button_middle {
+       height: 200px;
+       width: 200px;
+       transition: transform .2s;  
+   }
+   
+   
+   
+   .image_text_right {
+       height: 50px;
+       width: 200px;
+       align-self: start;
+       
+   }
+   
+   .image_button_right {
+       height: 200px;
+       width: 200px;
+       align-self: start;
+       
+   }
+   
+   .scissors_image {
+       height: 200px;
+       transition: transform .2s;  
+   }
+   
+   
+   .scissors_image:hover {
+       transform: scale(1.1);
+       box-shadow: 0 0 20px red;
+       text-shadow: 0 0 25px red;
+     }
+   
+   
+   
+   
+   .paper_image {
+       height: 200px;
+       width: 200px;
+       transition: transform .2s;  
+   }
+   
+   .paper_image:hover {
+       transform: scale(1.1);
+       box-shadow: 0 0 20px red;
+       text-shadow: 0 0 25px red;
+   
+   }
+   
+   
+   .rock_image {
+       height: 180px;
+       width: 180px;
+       align-self: center;   
+       
+   }
+   
+   .image_button_middle:hover {
+       
+       box-shadow: 0 0 20px red;
+       text-shadow: 0 0 25px red;
+       transform: scale(1.1);
+     }
+   
+   
+   .result_text {
+       color: red;
+       height: 30px;
+       font-size: large;
+       font-weight: 800;
+       padding-top: 25px;
+   }
+   
+   
+   .Score_Container {
+       display: flex;
+       height: 150px;
+       gap: 35px;
+       flex: auto;
+       align-items: center;
+       justify-content: center;
+       flex-direction: row;
+   
+     }
+   
+   .Human_Score_Box{
+       width: 200px;
+       height: 50px;
+       color: red;
+       margin: 0px;
+       padding-top: 5px;
+       font-size: large;
+   }
+   
+    
+   
+   .Computer_Score_Box{
+       width: 200px;
+       height: 50px;
+       color: red;
+       padding-top: 5px;
+       font-size: large;
+   }
+   
+   
+   .Text_Container {
+       display: flex;
+       height: 100px;
+       gap: 300px;
+       flex: auto;
+       align-items: center;
+       justify-content: center;
+       flex-direction: row;
+   
+     }
+   
+   .Human_Score_Box_Text{
+       width: 500px;
+       height: 100px;
+       color: red;
+       
+   }
+   
+    
+   
+   .Computer_Score_Box_Text{
+       width: 500px;
+       height: 100px;
+       color: red;
+       
+   }
+   
+   .human_boxes_Text{
+       width: 500px;
+       height: 100px;
+       color: red;
+       
+   }
+   
+   .computer_boxes_Text{
+       width: 500px;
+       height: 100px;
+       color: red;
+       
+   }
+   
+   .Round_Result {
+       display: flex;
+       height: 100px;
+       color: red;
+       align-items: center;
+       flex-direction: column;
+       justify-content: center;
+       margin: 0px;
+       
+       
+   
+   }
+   
+   .Round_Result_Text{
+       display: flex;
+       width: 500px;
+       height: 100px;
+       color: darkorange;
+       justify-content: center;
+       margin: 0px;
+       font-weight: 700;
+       
+       
+   }
+   
+   .Round_Result_Box_Title {
+       display: flex;
+       width: 500px;
+       height: 100px;
+       color: red;
+       justify-content: center;
+       margin: 0px;
+   
+   }
+   
+   
+   .Computer_Score_Box_Title{
+       
+       
+       height: 30px;
+       color: white;
+       background-color:darkgreen;
+       display: flex;
+       flex-direction: row;
+       
+       
+   }
+   
+   .Human_Score_Box_Title{
+       
+       background-color:darkred;
+       height: 30px;
+       color: white;
+       display: flex;
+       flex-direction: row;
+       
+       
+   }
+   
+   #resetButton {
+   
+       color: white;
+       background-color: darkblue;
+       width: 100px;
+       height: 50px;
+       border-width: 0px;
+       transition: transform .2s;  
+   }
+   
+   #resetButton:hover {
+   
+       box-shadow: 0 0 20px red;
+       transform: scale(1.1);
+   
+   }
+   
+   #resetButton:active {
+   
+       box-shadow: 0 0 50px red;
+   }
+   
+   .image_text_left_human{
+       height: 30px;
+       width: 200px;
+       display: flex;
+       color: red;
+       align-self: end;
+   }
+   
+   
+   .image_text_left_computer{
+       height: 30px;
+       width: 200px;
+       color: green;
+       display: flex;
+       align-self: end;
+   }
+   
+   
+   .image_text_middle_human{
+       height: 30px;
+       width: 200px;
+       display: flex;
+       color: red;
+   }
+   
+   
+   .image_text_middle_computer{
+       height: 30px;
+       width: 200px;
+       color: green;
+       display: flex;
+   }
+   
+   .image_text_right_human{
+       height: 30px;
+       width: 200px;
+       display: flex;
+       color: red;
+       align-self: start;
+   }
+   
+   
+   .image_text_right_computer{
+       height: 30px;
+       width: 200px;
+       color: green;
+       display: flex;
+       align-self: start;
+   }
+   
+   
+   .computer_score_paragraph{
+       margin: auto;
+       align-self: center;
+   }
+   
+   .human_score_paragraph{
+       margin: auto;
+       align-self: center;
+   }
+   
+   .copyright {
+      
+       color: bisque;
+       font-size: 10px;
+       padding-top: 150px;
+   
+   }
 
 }
