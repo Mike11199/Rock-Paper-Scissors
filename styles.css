@@ -303,7 +303,7 @@
         color: white;
         background-color: darkblue;
         width: 100px;
-        height: 50px;
+        height: 40px;
         border-width: 0px;
         transition: transform .2s;  
     }
@@ -661,7 +661,7 @@
    }
    
    .Round_Result_Box_Title {
-       display: flex;
+       display: flex;   
        width: 250px;
        height: 100px;
        color: red;
@@ -700,7 +700,7 @@
        color: white;
        background-color: darkblue;
        width: 100px;
-       height: 50px;
+       height: 40px;
        border-width: 0px;
        transition: transform .2s;  
    }
@@ -723,6 +723,7 @@
        display: flex;
        color: red;
        align-self: end;
+       font-size: 10px;
    }
    
    
@@ -732,6 +733,7 @@
        color: green;
        display: flex;
        align-self: end;
+       font-size: 10px;
    }
    
    
@@ -740,6 +742,7 @@
        width: 100px;
        display: flex;
        color: red;
+       font-size: 10px;
    }
    
    
@@ -748,23 +751,26 @@
        width: 100px;
        color: green;
        display: flex;
+       font-size: 10px;
    }
    
    .image_text_right_human{
        height: 30px;
-       width: 100px;
+       width: 120px;
        display: flex;
        color: red;
        align-self: start;
+       font-size: 10px;
    }
    
    
    .image_text_right_computer{
        height: 30px;
-       width: 100px;
+       width: 120px;
        color: green;
        display: flex;
        align-self: start;
+       font-size: 10px;
    }
    
    
