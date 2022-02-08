@@ -14,5 +14,6 @@ Concepts Learned from this project:
 -CSS for hover effects (red box shadow highlights when a player clicks a square, green highlights when the computer chooses). <br /> 
 -CSS for a transition (transform) and scale when hovering over an image of rock/paper/scissors or the reset button. <br /> 
 -Creating a JavaScript function to generate a random number between 0 and 2 (for the computer's move). <br /> <br /> 
+-Used the command {  @media only screen and (min-width: 601px) } to set CSS formatting for desktop screens and { @media only screen and (max-width: 600px) } to set CSS formatting for mobile screens.  This gives the website mobile support if viewed on a phone, in addition to regular browser support. <br /> <br />
  
 ![rps game](https://user-images.githubusercontent.com/91037796/152717849-1169578e-2167-4a71-859b-8ff5678f506e.png)
